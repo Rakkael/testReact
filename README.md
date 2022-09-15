@@ -12,3 +12,9 @@ https://v5.reactrouter.com/web/example/url-params
 
 ### 期望解决
 1. url 参数送入 %25%3D，要如何解码？
+
+### 最终解决方案
+参考：
+https://github.com/remix-run/history/issues/505#issuecomment-462328076
+
+安装 patch-package 依赖，修改 node_modules 中的 history 源码。

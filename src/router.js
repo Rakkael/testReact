@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Index from './index'
+import App from './App'
 
 export default class RouterMap extends Component {
     render() {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/:params" component={Index} />
+                    <Route exact path={"/"} component={App} />
+                    <Route exact path={"/:params"} component={App} />
                 </Switch>
             </Router>
         )

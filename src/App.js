@@ -1,13 +1,4 @@
 import React, { Component } from 'react';
-
-// function App() {
-
-//   return (
-//     <div className="App">
-
-//     </div>
-//   );
-// }
 class App extends Component {
   constructor(props) {
     super(props);
@@ -16,15 +7,26 @@ class App extends Component {
     }
   }
   componentDidMount() {
-    // let params = this.props;
-    // this.setState({ params: params });
-    console.log("params -->", this.props);
+    console.log(this.props.match);
+    let params = this.props.match.params.params;
+    this.setState({ params: params });
   }
   render() {
     return (
-      <div>{this.state.params}</div>
+      <div>
+        <div>{this.state.params}</div>
+      </div>
     )
   }
 }
+// function App(){
+//   const params = useParams();
+//   console.log(params);
+//   return (
+//     <div>
+//       <div>123</div>
+//     </div>
+//   )
+// }
 
 export default App;

@@ -8,7 +8,7 @@ export default class RouterMap extends Component {
             <Router>
                 <Switch>
                     <Route exact path={"/"} component={App} />
-                    <Route exact path={"/:params"} component={App} />
+                    <Route exact path={"/test/:params"} component={App} />
                 </Switch>
             </Router>
         )

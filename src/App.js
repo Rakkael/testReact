@@ -7,7 +7,8 @@ class App extends Component {
     }
   }
   componentDidMount() {
-    console.log(this.props.match);
+    console.log("react -->",this.props.match.params.params);
+    console.log("href -->",window.location.pathname);
     let params = this.props.match.params.params;
     this.setState({ params: params });
   }
